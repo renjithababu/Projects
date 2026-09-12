@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "The Dramatic Scroll Bar",
+  "version": "1.0.0",
+  "description": "Adds cinematic visual shockwaves and dramatic audio cues as you scroll through headings.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
