@@ -1,114 +1,107 @@
-<img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
+# 🎮 The Instigator Clipboard Manager
 
-
-
-# Glitched Out🎯
-
-
-## Basic Details
-### Team Name: Halo
-
-
-### Team Members
-- Team Lead: Neha Aravind - Saintgits College of Engineering
-- Member 2: Renjitha Babu - Saintgits College of Engineering
-
-
-### Project Description
-Glitched Out is a chaotic dual-browser-extension suite that turns mundane web interactions into unpredictable minigames. Face off against a health-bar Boss System while scrolling through paragraphs, or wrangle exploding letters and glowing lights every time you try to copy-paste.
-
-### The Problem (that doesn't exist)
-Web browsing has become far too peaceful and efficient. Scrolling down an article or copy-pasting standard text lacks high-stakes adrenaline, boss battles, and chaotic letter physics.
-
-### The Solution (that nobody asked for)
-Gamify browser friction! We built two distinct browser extensions that actively fight back: one forces you to dodge paragraph triggers to survive a Boss fight, while the other scatters your clipboard text across the screen into interactive floating spheres you have to drag back together.
-
-## Technical Details
-### Technologies/Components Used
-For Software:
--**Languages used:** TypeScript, JavaScript (ES6+), HTML5, CSS3
-- **Frameworks & Extension Architecture:** Chrome Extension API (Manifest V3), React 18, Tailwind CSS, Lucide React Icons
-- **Libraries & APIs used:** 
-- **Clipboard API & Events:** `copy`, `cut`, `paste` event interception & payload handling
-- **Chrome Extension APIs:** `chrome.storage.sync` (user preferences, VP, progression), `chrome.storage.local` (real-time cross-tab state), and Chrome Offscreen API
-  - **Web Audio API:** Real-time procedural synthesizers, oscillators & synthetic 8-bit retro sound effects (coin chimes, 1-up sounds, victory fanfare)
-  - **Intersection Observer API & Canvas 2D:** HTML5 Canvas zero-gravity 2D Orbeez bounce physics with `requestAnimationFrame` render loop
-- **Tools & Build Pipeline:** Vite 5, `@crxjs/vite-plugin`, Google Chrome Developer Tools, Git, GitHub, VS Code
-
-For Hardware:
--  N/A (Pure Software / Dual Web Extension Project)
-
-### Implementation
-For Software:
-# Installation
--Clone this repository: ```bash
-git clone [https://github.com/renjithababu/Projects.git](https://github.com/renjithababu/Projects.git)
--chrome://extensions
--Enable Developer mode in the top-right corner.
--Click the Load unpacked button and select the extension folder containing manifest.json. Repeat for the second extension folder to load both parts of the suite.
-
-Run
-
-# Run
--Open any webpage in Chrome.
--Scroll Boss: Start scrolling down paragraphs to initiate the boss battle, track HP bars, and attempt to stop triggered actions.
--Chaos Clipboard: Copy any text, then attempt to paste—watch letters turn into floating Orbeez physics spheres with glowing lights that you must drag back into place!
-
-
-
-### Project Documentation
-For Software:
-
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
-
-## Team Contributions
-- Neha Aravind: Scroll Boss Web Extension
-- Renjitha Babu: Chaos Clipboard  Web Extension
-
+> **A chaotic, gamified Chrome Extension that turns clipboard idle time into an interactive arcade mini-game!**
 
 ---
-Made with ❤️ at TinkerHub Useless Projects 
 
-![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
-![Static Badge](https://img.shields.io/badge/UselessProjects--26-26?link=https%3A%2F%2Ftinkerhub.org%2Fevents%2F1M8ORET9A1%2Fuseless-projects-3.0)
+## 🌟 Overview
 
+**The Instigator Clipboard Manager** is a Chrome extension that adds a playful twist to your copy-paste workflow. When you copy text, the longer it sits in your clipboard, the more unstable it becomes!
 
+If you paste within the **3-second safe window**, your text remains untouched. However, as idle time increases, letters escape from your clipboard into floating **2D Orbeez water beads**. Catch the Orbeez on your screen to recover your missing characters! If text sits idle for **1 minute or longer**, the entire payload is replaced with hilarious random statements, glitch glyphs, and emojis.
+
+---
+
+## ✨ Features
+
+### 🎯 1. Zero-Gravity Orbeez Arcade Mini-Game
+- When text degrades, letters escape into floating zero-gravity **Orbeez water beads**.
+- Catch all Orbeez on your screen to restore your text back to 100% accuracy.
+- Features dynamic Candy Crush style visual praise (*SWEET!*, *TASTY!*, *DELICIOUS!*) and celebratory confetti fanfares!
+
+### ⏱️ 2. Time-Scaling Text Degradation & 1-Min Randomizer
+- **0 - 3 Seconds**: 🛡️ Safe window — paste proceeds untouched.
+- **3 - 60 Seconds**: 🧪 Letter stripping engine converts letters into zero-gravity Orbeez.
+- **60+ Seconds (1 Minute)**: 🎲 Full text replacement with randomized statements, hot takes, emojis, and glitch glyphs.
+
+### 🛡️ 3. Progression System & Upgrades
+- **Victory Points (VP)**: Earn VP currency by completing mini-game text recoveries.
+- **Nano-Shields**: Purchase shields with VP to deflect clipboard tampering.
+- **Hyper-Magnet**: Unlock a magnetic tractor beam to pull floating Orbeez directly to your cursor.
+- **Nemesis AI Level**: Dynamic difficulty scaling that escalates as you win mini-games.
+
+### 🔊 4. Retro Audio & Visual FX
+- 8-bit retro Mario-inspired chimes, 1-up sounds, and mission accomplishment victory fanfares.
+- Cybernetic matrix decode animations, neon light glows, and screen shake FX.
+- Custom options and popup dashboards built with React and Tailwind CSS.
+
+---
+
+## 🛠️ Languages & Tools Used
+
+- **Programming Languages**: TypeScript, JavaScript (ES6+), HTML5, CSS3
+- **Extension Standard**: Chrome Extension **Manifest V3**
+- **Frameworks & UI**: React 18, Tailwind CSS, Lucide React Icons
+- **Build Tools**: Vite 5, `@crxjs/vite-plugin`
+- **Web APIs & Engine**:
+  - **Clipboard API & Clipboard Events**: Intercepting and logging `copy`, `cut`, and `paste` events.
+  - **Chrome Storage API**: `chrome.storage.sync` (user preferences, stats, progression) and `chrome.storage.local` (real-time cross-tab clipboard cache).
+  - **Web Audio API**: Synthetic 8-bit retro sound chimes, jump sounds, and victory fanfares.
+  - **Canvas 2D & Animation API**: Zero-gravity 2D Orbeez water bead physics simulation and `requestAnimationFrame`.
+
+---
+
+## 🚀 Installation & Run Steps
+
+### Step 1: Install Dependencies & Build
+Open your terminal in the project root directory and run:
+```bash
+# 1. Install project dependencies
+npm install
+
+# 2. Build the extension bundle into the dist/ directory
+npm run build
+```
+
+### Step 2: Load Unpacked Extension into Chrome
+1. Open Google Chrome and go to `chrome://extensions/` (or click **Settings > Extensions**).
+2. Enable **Developer mode** using the toggle switch in the top-right corner.
+3. Click the **Load unpacked** button in the top-left menu.
+4. Browse to the project folder and select the `dist/` directory (created during `npm run build`).
+5. The extension (**The Instigator Clipboard Manager**) will now be loaded and active on all websites!
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── manifest.json         # Extension Manifest V3 configuration
+├── package.json          # Project dependencies & build scripts
+├── vite.config.ts        # Vite configuration with CRXJS plugin
+├── src/
+│   ├── assets/           # Extension icons and graphics
+│   ├── background/       # Service worker background script
+│   ├── content/          # Content scripts (Orbeez physics, degradation engine, DOM injector)
+│   ├── options/          # React Options management page dashboard
+│   ├── popup/            # Extension popup menu UI
+│   ├── types/            # TypeScript interfaces & definitions
+│   └── utils/            # Extension storage defaults & helper functions
+```
+
+---
+
+## 🎮 How to Play
+
+1. **Copy Any Text**: Copy any text selection on any website.
+2. **Observe Clipboard Idle Time**:
+   - Paste immediately (<3s) for unmodified text.
+   - Wait 15-30s for Orbeez bubbles to break out on paste.
+   - Wait 60s+ for complete random payload replacement.
+3. **Catch Orbeez**: Click floating Orbeez water beads to recover stripped letters!
+
+---
+
+## 📄 License
+
+MIT License. Designed for fun, experimentation, and interactive web experiences.
