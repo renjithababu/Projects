@@ -2,26 +2,25 @@
 
 
 
-# [Project Name] 🎯
+# Glitched Out🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Halo
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Neha Aravind - Saintgits College of Engineering
+- Member 2: Renjitha Babu - Saintgits College of Engineering
 
 ### Project Description
-[2-3 lines about what your project does]
+Glitched Out is a chaotic dual-browser-extension suite that turns mundane web interactions into unpredictable minigames. Face off against a health-bar Boss System while scrolling through paragraphs, or wrangle exploding letters and glowing lights every time you try to copy-paste.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Web browsing has become far too peaceful and efficient. Scrolling down an article or copy-pasting standard text lacks high-stakes adrenaline, boss battles, and chaotic letter physics.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Gamify browser friction! We built two distinct browser extensions that actively fight back: one forces you to dodge paragraph triggers to survive a Boss fight, while the other scatters your clipboard text across the screen into interactive floating spheres you have to drag back together.
 
 ## Technical Details
 ### Technologies/Components Used
