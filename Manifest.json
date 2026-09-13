@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "The Dramatic Scroll Bar",
+  "version": "1.0.0",
+  "description": "Adds cinematic ragebait events as you scroll through headings and paragraphs.",
+  "permissions": [
+    "storage",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
