@@ -25,40 +25,45 @@ Gamify browser friction! We built two distinct browser extensions that actively 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
+- For Software:
+- **Languages used:** TypeScript, JavaScript (ES6+), HTML5, CSS3
+- **Frameworks & Extension Architecture:** Chrome Extension API (Manifest V3), React 18, Tailwind CSS, Lucide React Icons
+- **Libraries & APIs used:** 
+- **Clipboard API & Events:** `copy`, `cut`, `paste` event interception & payload handling
+- **Chrome Extension APIs:** `chrome.storage.sync` (user preferences, VP, progression), `chrome.storage.local` (real-time cross-tab state), and Chrome Offscreen API
+- **Web Audio API:** Real-time procedural synthesizers, oscillators & synthetic 8-bit retro sound effects (coin chimes, 1-up sounds, victory fanfare)
+- **Intersection Observer API & Canvas 2D:** HTML5 Canvas zero-gravity 2D Orbeez bounce physics with `requestAnimationFrame` render loop
+- **Tools & Build Pipeline:** Vite 5, `@crxjs/vite-plugin`, Google Chrome Developer Tools, Git, GitHub, VS Code
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+N/A (Pure Software / Dual Web Extension Project)
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+-Clone this repository ```bash
+ git clone [https://github.com/renjithababu/Projects.git](https://github.com/renjithababu/Projects.git)
+-Open Google Chrome and navigate to:chrome://extensions
+-Enable Developer mode in the top-right corner.
+-Click the Load unpacked button and select the extension folder containing manifest.json. Repeat for the second extension folder to load both parts of the suite.
 
 # Run
-[commands]
+-Open any webpage in Chrome.
+-Scroll Boss: Start scrolling down paragraphs to initiate the boss battle, track HP bars, and attempt to stop triggered actions.
+-Chaos Clipboard: Copy any text, then attempt to paste—watch letters turn into floating Orbeez physics spheres with glowing lights that you must drag back into place!
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="1850" height="900" alt="Chaos Clipboard in Action" src="https://github.com/user-attachments/assets/2306d0a3-9c6e-4555-91f9-280fe61900db" />
+Pasting text triggers a missing-letter system where characters explode into glowing, floating 2D Orbeez spheres that you must drag back into the text box.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1915" height="872" alt="Scroll Boss Encounter" src="https://github.com/user-attachments/assets/6145566a-974b-46ab-a7dd-a7ae4fcc596d" />
+Scrolling through paragraphs triggers a system boss battle complete with sector HP bars, terminal popups, and player defense metrics.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1917" height="867" alt="Combat victory screen" src="https://github.com/user-attachments/assets/978e5f62-c356-4bd9-8742-ba73ec113366" />
+Successfully defeating the Boss anomaly unlocks free scrolling mode with options to re-arm defenses.
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
 
 For Hardware:
 
@@ -81,16 +86,16 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/drive/folders/1lKE2XwQukRhNMnrUy4vRmIjQuQ4SQCnf?usp=sharing
+The video shows the Chaos Clipboard and the Dramatic Scroll Bar Boss battle in action.
 
 # Additional Demos
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Neha Aravind: Dramatic Scrollbar Web Extension
+- Renjitha Babu: Chaos Clipboard Web Extension
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
